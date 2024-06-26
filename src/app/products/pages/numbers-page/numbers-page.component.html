@@ -1,1 +1,30 @@
-<p>numbers-page works!</p>
+<p-panel header="Pipes numéricos" class="p-2">
+  <p>
+    <a href="https://v17.angular.io/api?query=pipe"
+    target="_blank">
+    Pipes </a> incluidos en Angular -  Usualmente en el Common Module,
+    si queremos usar los pipes o las directivas hay que importar dicho módulo.
+  </p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-12 xl:col-12">
+    <p-card header="Pipe numérico" subheader="quiero un número entero y redondea de 2 decimales hasta 2 decimales">
+      {{ totalSells | number:'1.2-2'}}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-12 xl:col-12">
+    <p-card header="Pipe currency" subheader="EUR( ISO 4217 ), símbolo de moneda y número entero con 4 decimales">
+      {{ totalSells | currency:'EUR':'symbol-narrow':'1.4-4' }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-12 xl:col-12">
+    <p-card header="Pipe percent" subheader="Pipe de porcentaje, con 2 decimales">
+      {{ percent | percent:'1.2-2' }}
+    </p-card>
+  </div>
+
+
+</div>

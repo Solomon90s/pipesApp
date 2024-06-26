@@ -26,8 +26,8 @@
     </p-card>
   </div>
 
-  <div class="col-12 md:col-6 xl:col-4">
-    <p-card header="Date">
+  <div class="col-12 md:col-6 xl:col-6">
+    <p-card header="Date, ejemplo del formato a utilizar">
       <ol >
         <li>fecha</li>
         <li>fecha | date</li>
@@ -41,13 +41,16 @@
       <ol>
         <li>fecha | date:'long':GMT-2</li>
         <li>fecha | date:'long':GMT+2</li>
+        <li>fecha | date:'long':'':'es-419'</li>
+        <li>fecha | date:'long':'':'en-US'</li>
+        <li>fecha | date:'long':'':'fr-CA'</li>
       </ol>
 
     </p-card>
   </div>
 
-  <div class="col-12 md:col-6 xl:col-4">
-    <p-card header="Date">
+  <div class="col-12 md:col-6 xl:col-6">
+    <p-card header="Date, ejemplo ya formateado con el pipe">
       <ol>
         <li> {{ customDate }}</li>
         <li> {{ customDate | date }}</li>
@@ -59,8 +62,11 @@
 
       <hr>
       <ol>
-        <li>{{customDate | date:'long':'GMT-2'}}</li>
-        <li>{{customDate | date:'long':'GMT+2'}}</li>
+        <li> {{ customDate | date:'long':'GMT-2'}}</li>
+        <li> {{ customDate | date:'long':'GMT+2'}}</li>
+        <li> {{ customDate | date:'long':'':'es-419'}}</li>
+        <li> {{ customDate | date:'long':'':'en-US'}}</li>
+        <li> {{ customDate | date:'long':'':'fr-CA'}}</li>
       </ol>
     </p-card>
   </div>
