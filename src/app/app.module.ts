@@ -12,13 +12,14 @@ import localeEs419 from '@angular/common/locales/es-419'
 import localeFrCA from '@angular/common/locales/fr-CA'
 import { registerLocaleData } from '@angular/common';
 
+
 registerLocaleData( localeEs419 );
 registerLocaleData( localeFrCA );
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     AppRoutingModule,
